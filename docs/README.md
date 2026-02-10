@@ -11,7 +11,7 @@
 
 ### 1) Phase 0 — Static Contracts (헌법, 빠르게 STABLE 목표)
 
-- 10_static-contracts/executor-contract.md
+- 10_static-contracts/runtime-execution-contract.md
 - 10_static-contracts/paths-and-mount-policy.md
 - 10_static-contracts/idempotency-key.md
 - 10_static-contracts/result-artifact-conventions.md

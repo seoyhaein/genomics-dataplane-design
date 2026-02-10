@@ -7,7 +7,7 @@
 ## 빠른 링크
 
 - Phase 0 계약(Contracts)
-  - docs/10_static-contracts/executor-contract.md
+  - docs/10_static-contracts/runtime-execution-contract.md
   - docs/10_static-contracts/paths-and-mount-policy.md
   - docs/10_static-contracts/idempotency-key.md
 - ADR(왜? 결정 기록)
