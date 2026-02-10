@@ -1,0 +1,18 @@
+{
+  "default": true,
+
+  // We use YAML frontmatter at the top of docs, so don't force "first line must be a heading".
+  "MD041": false,
+
+  // Line length is noisy for specs; keep it flexible early.
+  "MD013": false,
+
+  // Allow inline HTML (sometimes useful for notes/tables).
+  "MD033": false,
+
+  // Keep duplicate headings allowed early (can happen in long specs).
+  "MD024": false,
+
+  // Some teams like to allow "bare URLs". If you want to enforce, set true later.
+  "MD034": false
+}

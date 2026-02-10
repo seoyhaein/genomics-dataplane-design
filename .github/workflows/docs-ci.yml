@@ -1,0 +1,45 @@
+name: docs-ci
+
+on:
+  pull_request:
+    paths:
+      - "docs/**"
+      - ".github/workflows/docs-ci.yml"
+      - ".markdownlint.jsonc"
+      - ".lychee.toml"
+  push:
+    branches: [ main ]
+    paths:
+      - "docs/**"
+      - ".github/workflows/docs-ci.yml"
+      - ".markdownlint.jsonc"
+      - ".lychee.toml"
+
+jobs:
+  markdownlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Markdownlint (docs/**/*.md)
+        uses: DavidAnson/markdownlint-cli2-action@v16
+        with:
+          config: .markdownlint.jsonc
+          globs: |
+            docs/**/*.md
+
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Lychee is intentionally configured to be "soft" on external links early on:
+      # - retries enabled
+      # - accepts 429
+      # - excludes localhost/127.0.0.1 and common private patterns
+      - name: Link check (docs/**/*.md)
+        uses: lycheeverse/lychee-action@v1
+        with:
+          args: >
+            --config .lychee.toml
+            docs/**/*.md

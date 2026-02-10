@@ -1,0 +1,22 @@
+# Lychee config (soft mode for early-stage docs)
+
+verbose = "info"
+no_progress = true
+
+# External network can be flaky. Keep timeouts reasonable and retry a bit.
+timeout = 20
+max_retries = 2
+retry_wait_time = 2
+
+# Treat rate-limit as acceptable in CI (do not fail PR just because of 429).
+accept = ["200", "206", "429"]
+
+# Skip checking localhost/dev links.
+exclude = [
+  "localhost",
+  "127.0.0.1",
+  "0.0.0.0"
+]
+
+# Optional: ignore these schemes (often used in docs).
+exclude_all_private = true
