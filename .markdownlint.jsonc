@@ -14,5 +14,8 @@
   "MD024": false,
 
   // Some teams like to allow "bare URLs". If you want to enforce, set true later.
-  "MD034": false
+  "MD034": false,
+  
+  // // 번호 목록은 1,2,3 증가 스타일을 선호(1,1,1 강제 비활성화)
+  "MD029": false  
 }
