@@ -4,7 +4,7 @@ Phase: 0
 Owner: @seoyhaein
 Last-Updated: 2026-02-10
 Depends-On:
-  - ./paths-and-mount-policy.md"
+  - "./paths-and-mount-policy.md"
 ---
 
 # 런타임 실행 계약 (Runtime Execution Contract)
