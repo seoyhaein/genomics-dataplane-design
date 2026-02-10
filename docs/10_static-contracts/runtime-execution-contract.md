@@ -1,7 +1,7 @@
 ---
 Status: DRAFT
 Phase: 0
-Owner: @seoyhaein
+Owner: "@seoyhaein"
 Last-Updated: 2026-02-10
 Depends-On:
   - "./paths-and-mount-policy.md"

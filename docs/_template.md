@@ -1,7 +1,7 @@
 ---
 Status: DRAFT
 Phase: X
-Owner: @your-github-id
+Owner: "@your-github-id"
 Last-Updated: YYYY-MM-DD
 Depends-On:
   - "../10_static-contracts/runtime-execution-contract.md"
